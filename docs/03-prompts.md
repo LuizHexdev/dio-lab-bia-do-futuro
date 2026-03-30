@@ -99,5 +99,4 @@ Mais Sobre Few-Shot Prompts no artigo: [Zero, One e Few-Shot Prompts: Entendendo
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
-- [Observação 2]
+- Existem algumas diferenças claras no uso de diferentes LLMs. Dentre as LLMs usadas, como o Copilot, o ChatGPT, Claude e Gemini, todas se saíram muito bem.
