@@ -1,29 +1,18 @@
 # Pitch (3 minutos)
-
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
  
-## Roteiro Sugerido
+## Roteiro da Dina
 
-### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+### 1. Problema (30 seg)
+> Muitas pessoas não têm educação financeira e acabam tomando decisões sem entender conceitos básicos como investimentos, reserva de emergência ou controle de gastos. Além disso, as soluções existentes costumam ser complexas, genéricas ou focadas em recomendar produtos, e não em ensinar de forma simples e personalizada.
 
-[Sua descrição aqui]
-
-### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
-
-[Sua descrição aqui]
+### 2. Solução (1 min)
+> A Dina é uma educadora financeira com IA que ensina de forma simples e personalizada. Ela usa os dados do usuário (perfil, gastos e histórico) para explicar conceitos com exemplos reais, sem recomendar investimentos.
 
 ### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[Descreva o que será mostrado]
+> O usuário faz perguntas no chat e a Dina responde com base nos dados dele. Mostrarei a interface em funcionamento, com respostas rápidas e personalizadas.
 
 ### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
-
-[Sua descrição aqui]
+> O diferencial é a educação personalizada baseada em dados reais. O impacto é ajudar pessoas a entenderem melhor seu dinheiro e tomarem decisões mais conscientes.
 
 ---
 
@@ -39,6 +28,6 @@
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+> Link do pitch (YouTube)
 
-[Link do vídeo]
+[Link do vídeo EM BREVE]
