@@ -1,149 +1,175 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+<div align="center">
 
-## Contexto
+# 💰 Dina — Agente de Educação Financeira com IA Generativa
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+> Desafio prático desenvolvido durante o lab da [DIO](https://www.dio.me/), com foco na criação de um agente financeiro inteligente usando IA Generativa.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+![Status](https://img.shields.io/badge/status-concluído-brightgreen?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-local-black?style=for-the-badge)
+![DIO](https://img.shields.io/badge/DIO-Lab-E63946?style=for-the-badge)
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
-
----
-
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+</div>
 
 ---
 
-### 2. Base de Conhecimento
+## 🧠 Sobre o Projeto
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+**Dina** é uma educadora financeira virtual voltada para pessoas iniciantes em finanças pessoais. Ela usa os dados do próprio usuário (perfil, transações, histórico de atendimento) para explicar conceitos de forma prática e personalizada — **sem recomendar investimentos**, apenas educando.
 
 ---
 
-### 3. Prompts do Agente
+## 👩‍💼 A Persona
 
-Documente os prompts que definem o comportamento do seu agente:
+**Nome:** Dina  
+**Perfil:** Direta, educativa e compreensiva  
+**Tom:** Acessível e didático, como explicar para um amigo
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+| Situação | Exemplo de resposta |
+|---|---|
+| Saudação | *"Olá, sou a Dina! Como posso ajudar com suas finanças hoje?"* |
+| Confirmação | *"Entendi! Deixa eu verificar isso para você."* |
+| Limitação | *"Não recomendo onde investir, mas posso te explicar como esses investimentos funcionam!"* |
+| Fora do escopo | *"Não tenho essa informação, mas posso ajudar com algo relacionado a finanças?"* |
 
 ---
 
-### 5. Avaliação e Métricas
+## 💬 Exemplos de Interação
 
-Descreva como você avalia a qualidade do seu agente:
+<details>
+<summary><strong>Ver exemplos reais de conversa</strong></summary>
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
+**Conceito financeiro**
 ```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+Usuário: O que é CDI?
+Dina: CDI é uma taxa de referência usada pelos bancos. Quando um investimento
+      rende 100% do CDI, significa que ele acompanha essa taxa. Hoje o CDI
+      está próximo da Selic. Quer que eu explique a diferença entre os dois?
 ```
 
+**Análise de gastos**
+```
+Usuário: Onde estou gastando mais?
+Dina: Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380),
+      seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus
+      gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?
+```
+
+**Edge case — recomendação de investimento**
+```
+Usuário: Onde devo investir meu dinheiro?
+Dina: Como educadora financeira, não posso recomendar investimentos, mas caso
+      tenha alguma dúvida sobre algum produto ou investimento específico, eu posso ajudar.
+```
+
+</details>
+
 ---
 
-## Dicas Finais
+## 🔄 Arquitetura
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+```mermaid
+flowchart TD
+    A[Usuário] --> B["Streamlit (Interface Visual)"]
+    B --> C[LLM via Ollama]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação]
+    E --> F[Resposta]
+```
+
+| Componente | Tecnologia |
+|---|---|
+| Interface | Streamlit |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON + CSV mockados |
+
+---
+
+## 🗃️ Base de Conhecimento
+
+| Arquivo | Formato | Uso pela Dina |
+|---|---|---|
+| `perfil_investidor.json` | JSON | Personalizar explicações com base no perfil do cliente |
+| `transacoes.csv` | CSV | Analisar padrão de gastos de forma didática |
+| `historico_atendimento.csv` | CSV | Dar continuidade a atendimentos anteriores |
+| `produtos_financeiros.json` | JSON | Explicar os produtos disponíveis ao cliente |
+
+> Os dados são carregados no código e injetados diretamente no prompt de contexto, de forma enxuta para otimizar o consumo de tokens.
+
+---
+
+## 📄 Documentação
+
+| # | Documento | Descrição |
+|---|---|---|
+| 01 | [Documentação do Agente](docs/01-documentacao-agente.md) | Persona, caso de uso e arquitetura |
+| 02 | [Base de Conhecimento](docs/02-base-conhecimento.md) | Estratégia de dados e integração |
+| 03 | [Prompts](docs/03-prompts.md) | System prompt, exemplos e edge cases |
+| 04 | [Métricas](docs/04-metricas.md) | Avaliação e cenários de teste |
+| 05 | [Pitch](docs/05-pitch.md) | Roteiro da apresentação |
+
+---
+
+## 📁 Estrutura do Repositório
+
+<details>
+<summary><strong>Ver estrutura completa</strong></summary>
+
+```
+📁 dio-lab-bia-do-futuro/
+│
+├── 📁 data/
+│   ├── perfil_investidor.json
+│   ├── transacoes.csv
+│   ├── historico_atendimento.csv
+│   └── produtos_financeiros.json
+│
+├── 📁 docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
+│
+├── 📁 src/
+│   └── app.py
+│
+├── 📁 assets/
+└── 📄 README.md
+```
+
+</details>
+
+---
+
+## 🔒 Segurança e Anti-Alucinação
+
+- ✅ Usa apenas os dados fornecidos na base de conhecimento
+- ✅ Não recomenda investimentos específicos
+- ✅ Admite quando não sabe: *"Não tenho essa informação, mas posso explicar..."*
+- ✅ Não acessa dados bancários sensíveis
+- ✅ Não substitui um profissional certificado
+
+---
+
+## 📊 Métricas de Avaliação
+
+| Métrica | O que avalia |
+|---|---|
+| **Assertividade** | O agente respondeu o que foi perguntado? |
+| **Segurança** | O agente evitou inventar informações? |
+| **Coerência** | A resposta faz sentido para o perfil do cliente? |
+
+**O que funcionou bem:** Alta assertividade e foco nos dados fornecidos.  
+**O que pode melhorar:** Tempo de resposta do modelo local.
+
+---
+
+<div align="center">
+
+Feito com 💙 por [LuizHexdev](https://github.com/LuizHexdev)  
+*Lab DIO — Agente Financeiro com IA Generativa*
+
+</div>
