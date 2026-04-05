@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💰 Dina — Agente de Educação Financeira com IA Generativa
+# 💰 Dina - A sua gente de Educação Financeira com IA Generativa
 
 > Desafio prático desenvolvido durante o lab da [DIO](https://www.dio.me/), com foco na criação de um agente financeiro inteligente usando IA Generativa.
 
