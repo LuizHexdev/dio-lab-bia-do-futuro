@@ -4,8 +4,8 @@
 ## Setup do Ollama (5-10 minutos)
 
 ```
-1. Installar o Ollama (Ollama.com)
-2. Baixar um modelo leve
+# 1. Installar o Ollama (Ollama.com)
+# 2. Baixar um modelo leve
 ollama pull gpt-oss
 
 # Testar
