@@ -7,8 +7,6 @@
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-local-black?style=for-the-badge)
-![DIO](https://img.shields.io/badge/DIO-Lab-E63946?style=for-the-badge)
 
 </div>
 
